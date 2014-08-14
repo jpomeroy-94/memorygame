@@ -1,0 +1,98 @@
+<html>
+<head>
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script type="text/javascript">
+	$ = jQuery.noConflict();
+</script>
+<script type="text/javascript" src="/jslib/ServerIo.js"></script>
+<script type="text/javascript" src="/jslib/GeneralUtil.js"></script>
+</head>
+<style>
+td.programColumn {
+	vertical-align: text-top;
+	padding: 0 10 0 0;
+}
+
+body.main {
+	background: transparent
+		url('/images/jeffreypomeroy/backgrounds/spiral.png') repeat fixed left;
+}
+
+table.concept {
+	padding: 0px 0px 0px 30px;
+	width: 900px;
+}
+
+</style>
+</head>
+<body class="main">
+	<table class="concept">
+		<th>Program</th>
+		<th>Description</th>
+		<tr>
+			<td class="programColumn"><a name="memorygame.htm" class="programClass" href="#">memorygame.htm</a></td>
+			<td class="descriptionColumn">
+				<ul>
+					<li>Events are in a separate javascript file(jsSelect.js)</li>
+					<li>Standard Style Sheets(css) are defined in a separate style
+						sheet file(memorygame.css)</li>
+					<li>Has Jquery
+						interface(http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css)</li>
+					<li>Several javascript objects are created within linked
+						javascript files(/jslib/MemoryGame.js, /jslib/FlipCard.js,
+						/jslib/ServerIo.js, /jslib/TrackScore.js)</li>
+					<li>The html5 canvas object is the main tool for running the
+						game. The new html5 feature allows for painting the game only
+						after all images have been loaded from the server to the client
+						giving it a much more professional look and feel.</li>
+				</ul>
+			</td>
+		<tr>
+			<td class="programColumn"><a name="MemoryGame.js" class="programClass" href="#">MemoryGame.js</a><br>
+			<a name="TrackScore.js" class="programClass" href="#">TrackScore.js</a>
+			</td>
+			<td class="descriptionColumn">
+				<ul>
+					<li>Uses concept of closure. Public methods are defined by
+						being located in an object which is returned by the function.
+						Private methods and variables are defined within the function.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="programColumn"><a name="FlipCard.js" class="programClass" href="#">FlipCard.js</a></td>
+			<td class="descriptionColumn">
+				<ul>
+					<li>Uses the 'prototype object' for memory sharing. The
+						Constructor(FlipCard) is instantiated/replicated to an array of
+						objects(flipCard). All code which is used by all objects is put
+						into the prototype object of the constructor. All variables,
+						arrays, and objects which are unique to each object are stored
+						outside of the prototype object but in the constructor, thus being
+						placed in every object created.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="programColumn"><a name="memorygame.css" class="programClass" href="#">memorygame.css</a></td>
+			<td class="descriptionColumn">
+				<ul>
+					<li>Style sheet setups are in their own file.</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td class="programColumn"><a name="jsSelect.js" class="programClass" href="#">jsSelect.js</a></td>
+			<td class="descriptionColumn">
+				<ul>
+					<li>Event definitions are in their own file.</li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<script type="text/javascript" src="/jslib/jsSelect.js"></script>
+</body>
+</html>

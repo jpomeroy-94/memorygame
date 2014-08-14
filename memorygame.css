@@ -1,0 +1,28 @@
+canvas#memoryGameId {
+	position:absolute;
+	top:50px;
+	left:50px;
+	border:thick outset blue;
+}
+div.startbutton {
+	position:absolute;
+	top:5px;
+	left:5px;
+	width:100px;
+	height:30px;
+}
+div.endbutton {
+	position:absolute;
+	top:5px;
+	left:100px;
+	width:100px;
+	height:30px;
+}
+div.debugit {
+	position:absolute;
+	top:5px;
+	left:300px;
+	width:300px;
+	height:30px;
+	border: thin outset red
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/csslib/memorygame.css">
+<link rel="stylesheet"
+	href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.8.2.js"></script>
+<script type="text/javascript">$ = jQuery.noConflict();</script>
+<script type="text/javascript" src="/jslib/MemoryGame.js"></script>
+<script type="text/javascript" src="/jslib/FlipCard.js"></script>
+<script type="text/javascript" src="/jslib/ServerIo.js"></script>
+<script type="text/javascript" src="/jslib/TrackScore.js"></script>
+</head>
+<body>
+<div class="beHidden" id="preLoadId"></div>
+	<div class="upperrow">
+		<div class="startButton">
+			<button class="startbutton" id="startButtonId">start</button>
+		</div>
+		<div class="endButton">
+			<button class="endbutton" id="endButtonId">stop</button>
+		</div>
+		<div class="userButton">
+			<button class="userButton" id="updateUserButtonId">user</button>
+		</div>
+		<div class="dialogue" id="dialogueId"></div>
+		<div class="clock" id="clockId">00:00</div>
+		<div class="theScore" id="theScoreId"></div>
+		<img src="/images/jeffreypomeroy/buttons/programbuttons.png" name="programs" class="programs" id="programsId">
+	</div>
+	<div class="userForm" id="userFormId">
+	<form action='#'>
+	<span class="userNameLabel">user name</span>
+	<input type="text" id="userNameId" value="anonymous">
+	<button class="userButton" id="userButtonId">set user</button>
+	</form>
+	</div>
+	<canvas height="540px" width="660px" id="memoryGameId">please use a browser that is current</canvas>
+	<script type="text/javascript" src="/jslib/jsSelect.js"></script>
+</body>
+</html>
